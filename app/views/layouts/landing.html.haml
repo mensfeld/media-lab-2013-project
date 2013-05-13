@@ -1,0 +1,230 @@
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %title Meeting POINT
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+
+    %link{:href => "assets/layout/bootstrap.css", :rel => "stylesheet"}
+    %link{:href => "assets/layout/landing/style.css", :rel => "stylesheet"}
+    %link{:href => "http://fonts.googleapis.com/css?family=Arvo", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "http://fonts.googleapis.com/css?family=PT+Sans", :rel => "stylesheet", :type => "text/css"}
+
+    %script{:src => "/assets/libs/jquery/jquery.js", :type => "text/javascript"}
+    %script{:src => "/assets/libs/jquery/jquery.easing.1.3.js", :type => "text/javascript"}
+    %script{:src => "/assets/libs/jquery/jquery.validate.js", :type => "text/javascript"}
+    %script{:src => "/assets/libs/jquery/jquery.watermark.min.js", :type => "text/javascript"}
+    %script{:src => "/assets/libs/jquery/waypoints.min.js", :type => "text/javascript"}
+    %script{:src => "/assets/libs/jquery/jquery.parallax-1.1.3.js", :type => "text/javascript"}
+    %script{:src => "/assets/libs/jquery/theme.js", :type => "text/javascript"}
+  %body
+
+    .lock-header.hidden-phone
+      .container
+        .row
+          .span4.offset2
+            %h4
+              Ostro pracujemy.
+              %span Dołącz do nas:
+          .span4
+            %a{:href => '#'}
+              %img{:alt => "HOME", :src => "/assets/layout/landing/Facebook.png"}
+            %a{:href => '#'}
+              %img{:alt => "HOME", :src => "/assets/layout/landing/Twitter.png"}
+            %a{:href => '#'}
+              %img{:alt => "HOME", :src => "/assets/layout/landing/Share-This.png"}
+    .page-wrapper
+      .agency-wrap
+        .container.page-container.home-container
+          .row
+            .span12
+              .top-nav
+                %ul.nav.hidden-phone
+                  %li
+                    %a.contact-link{:href => "#contact"} KONTAKT
+                  %li
+                    %a.contact-link{:href => "#contact"} ZALOGUJ SIĘ
+                  %li
+                    %a.contact-link{:href => "#contact"} STORNA GŁÓWNA
+
+              .header-main.hidden-phone
+                %h1
+                  MEETING POINT
+                %br.hidden-phone/
+                %h4 Jesteśmy tam, gdzie są warsztaty
+                %h4 Jesteśmy tam, gdzie są miejsca
+
+                %form#subForm.theme-form.sign-up-form{:action => '#', :method => "post"}
+                  %input#email.email.required{:name => "email", :title => "", :type => "email", :value => ""}
+                  %input{:type => "submit", :value => "DOŁĄCZ!"}
+              .header-main-phone.visible-phone
+                %h1
+                  MEETING POINT
+                %h4 Dołącz do nas, podając swój e-mail
+                %form#subForm.theme-form.sign-up-form{:action => '#', :method => "post"}
+                  %input#email.email.required{:name => "email", :title => "Twój adres e-mail", :type => "email", :value => ""}
+                  %input{:type => "submit", :value => "DOŁĄCZ!"}
+      %a.down-tab.hidden-phone{:href => "#feature-set", :name => "feature-set"}
+        CHCĘ WIEDZIEĆ WIĘCEJ
+        %i.arrow.arrow-down
+      .full-width-features.feature-1
+        .container
+          .row
+
+            .span12
+              %h1 AWESOME SERVICES
+              %h2
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                %br.hidden-phone/
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          .row
+            .span12
+              %hr
+              %br
+            .span3
+              %img{:alt => "", :src => "/assets/layout/landing/feature01.png"}
+              %h3 Monitor
+              %p
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            .span3
+              %img{:alt => "", :src => "/assets/layout/landing/feature02.png"}
+              %h3 Manage
+              %p
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            .span3
+              %img{:alt => "", :src => "/assets/layout/landing/feature03.png"}
+              %h3 Backup
+              %p
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            .span3
+              %img{:alt => "", :src => "/assets/layout/landing/feature04.png"}
+              %h3 Group Publish
+              %p
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+      .full-width-features.feature-2
+        .container
+          .row
+
+            .span12
+              %h1 AMAZING PRICES
+              %h2
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                %br.hidden-phone/
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          .row
+            .span12
+            .span12
+              .pricing-table-wrapper
+                .pricing-table.row-fluid
+                  %ul.pricing-column.span2
+                    %li.pricing-title Beginner
+                    %li.pricing-price
+                      $20
+                      %span /month
+                    %li Yes
+                    %li Yes
+                    %li Yes
+                    %li No
+                    %li No
+                    %li.pricing-button
+                      %a.button{:href => '#'} Sign Up
+                  %ul.pricing-column.span2
+                    %li.pricing-title Beginner
+                    %li.pricing-price
+                      $20
+                      %span /month
+                    %li 5,000MB Storage
+                    %li 1TB Bandwidth
+                    %li Technical support
+                    %li cPanel & MySQL
+                    %li 99% uptime
+                    %li.pricing-button
+                      %a.button{:href => '#'} Sign Up
+                  %ul.pricing-column.span3
+                    %li.pricing-title Special Offer!
+                    %li.pricing-price
+                      $50
+                      %span /month
+                    %li 50,000MB Storage
+                    %li 5TB Bandwidth
+                    %li Technical support
+                    %li cPanel & MySQL
+                    %li 100% uptime
+                    %li.pricing-button
+                      %a.button{:href => '#'} Sign Up
+                  %ul.pricing-column.span5
+                    %li.pricing-title Special Offer!
+                    %li.pricing-price
+                      $100
+                      %span /month
+                    %li Unlimited Storage
+                    %li Unlimited Bandwidth
+                    %li Technical support
+                    %li cPanel & MySQL
+                    %li 100% uptime
+                    %li.pricing-button
+                      %a.button{:href => '#'} Sign Up
+      .full-width-features.feature-3
+        .container
+          .row
+
+            .span12
+              %h1 MEET THE TEAM
+              %h2
+                We are a team of two,
+                %br
+                with the passion of hundreds.
+          .row
+            .span12
+              %hr
+              %br
+            .span6
+              %img{:alt => "", :src => "/assets/layout/landing/team01.jpg"}
+              %h3 Jane Doe
+              %p
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            .span6
+              %img{:alt => "", :src => "/assets/layout/landing/team02.jpg"}
+              %h3 John Doe
+              %p
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+      .container.call-to-action
+        %h1
+          NADCHODZIMY!
+        %a.scroll-top{:href => "#top"} DOŁĄCZ DO NAS!
+      .end_page
+        %img{:alt => "logo", :src => "/assets/layout/landing/beer.png"}
+
+      .footer{:name => "contact"}
+        .container.contact-form
+          .row
+            .span12
+              %br
+              %br
+              %h3 Contact Us
+              .map
+                %iframe{:frameborder => "0", :height => "250", :marginheight => "0", :marginwidth => "0", :scrolling => "no", :src => "https://maps.google.com/maps?ie=UTF8&q=las+tablas,+madrid&fb=1&hq=las+tablas,&hnear=0xd42287d383766c9:0xad469cc0ed50997d,Madrid,+Espa%C3%B1a&cid=0,0,15011046097507982567&t=m&iwloc=A&ll=40.421889,-3.713523&spn=0.006295,0.006295&output=embed", :width => "100%"}
+              %br/
+            %form.theme-form{:action => "", :method => "post"}
+              .span3
+                %input#name-field.required{:name => "namefield", :title => "Name", :type => "text"}
+              .span3
+                %input#email-field.email.required{:name => "emailfield", :title => "Email", :type => "email"}
+              .span3
+                %input#phone-field{:name => "phonefield", :title => "Phone", :type => "text"}
+              .span3
+                %input#company-field{:name => "companyfield", :title => "Company", :type => "text"}
+              .span12.comments-textarea
+                %textarea#comments-field{:name => "commentsfield", :title => ""}
+              .span4.offset4
+                %input{:name => "say", :type => "hidden", :value => "hello"}
+                %input{:type => "submit", :value => "SUBMIT!"}
+        .container
+          .copyright
+            %a.logo{:href => "index.html"}
+              %img{:alt => "logo", :src => "/assets/layout/landing/logo-footer.png"}
+            %p
+              Utworzono w czasie Media-Labu 2013.
+              Copyright 2013
+              %br

@@ -1,0 +1,73 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "IE=Edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+    %title= content_for?(:title) ? yield(:title) : "MediaLab"
+    = csrf_meta_tags
+    /[if lt IE 9]
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js" type="text/javascript"></script>
+    = stylesheet_link_tag "layout/bootstrap_and_overrides.css", :media => "all"
+    = stylesheet_link_tag "layout/bootstrap_overrides.css", :media => "all"
+    = stylesheet_link_tag "layout/layout", :media => "all"
+    = stylesheet_link_tag "layout/elements", :media => "all"
+    = stylesheet_link_tag "layout/icons", :media => "all"
+    = stylesheet_link_tag "layout/index", :media => "all"
+    = stylesheet_link_tag "application", :media => "all"
+    = javascript_include_tag "application"
+    = favicon_link_tag 'favicon.ico', :rel => 'shortcut icon'
+  %body
+    .navbar.navbar-inverse
+      .navbar-inner
+        %a.brand{:href => "index.html"}
+          M-Lab2013
+        %button.btn.btn-navbar.visible-phone{"data-target" => ".nav-collapse", "data-toggle" => "collapse", :type => "button"}
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        .nav-collapse.collapse.visible-phone.mobile-menu
+          %ul.nav
+            %li.active
+              %a{:href => "index.html"} Home
+            %li
+              %a{:href => "chart-showcase.html"} Charts
+            %li
+              %a{:href => "user-list.html"} Users
+            %li
+              %a{:href => "form-showcase.html"} Forms
+            %li
+              %a{:href => "gallery.html"} Gallery
+            %li
+              %a{:href => "icons.html"} Icons
+            %li
+              %a{:href => "calendar.html"} Calendar
+            %li
+              %a{:href => "tables.html"} Tables
+            %li
+              %a{:href => "ui-elements.html"} UI Elements
+        %ul.nav.pull-right
+          %li.settings
+            %a{:href => "personal-info.html", :role => "button"}
+              %span.navbar_icon
+          %li#fat-menu.dropdown
+            %a.logout{:href => "signin.html", :role => "button"}
+              %span.navbar_icon
+
+    #sidebar-nav.hidden-phone
+      %ul#dashboard-menu
+        %li.active
+          .pointer
+            .arrow
+            .arrow_border
+          %a.tab1{:href => "index.html"}
+            %i.sidebar-home
+            %span Home
+
+
+    .content
+      .container-fluid
+
+        #pad-wrapper
+          = bootstrap_flash
+          = yield
