@@ -96,7 +96,7 @@ end
 
 # Before performing update stop Resque server and lock Apache into maintanance
 before 'deploy:update' do
-  #apache.lock
+  apache.lock
 end
 
 # After we update code, we need to do a code cleanup, create symlinks and
@@ -107,7 +107,7 @@ after 'deploy:update_code' do
   application.symlinks
   application.settings
   application.bundle
-  #apache.lock
+  apache.lock
 end
 
 # After full update we need to do a cleanup of old realeses, migrate the db,

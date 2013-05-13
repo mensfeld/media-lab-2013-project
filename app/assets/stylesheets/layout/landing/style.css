@@ -14,7 +14,7 @@ body{line-height:1}ol,ul{list-style:none}
 
 body{
 	background:url(/assets/layout/landing/home-bg.jpg) no-repeat top center #b1d95c;
-	font-family:'PT Sans', Helvetica, Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	color:#7f7f7f;
 	background-attachment:fixed;
 }
@@ -56,7 +56,7 @@ body a:hover{
 	z-index:1000;
 	text-align:center;
 	color:#fff;
-	font-family:"Arvo", Helvetica, Arial;
+	font-family: Helvetica, Arial;
 	font-weight:300;
 	-moz-box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
 	-webkit-box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
@@ -162,7 +162,7 @@ body a:hover{
     text-align: center;
 }
 .header-main h1, .call-to-action h1, .uh-oh h1, .header-main-phone h1{
-	font-family: "Arvo", Helvetica, Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	font-weight:900;
 	color:#fff;
 	font-size:55px;
@@ -170,7 +170,7 @@ body a:hover{
 }
 
 .header-main h4, .header-main-phone h4{
-	font-family: "PT Sans", Helvetica, Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	font-weight:400;
 	color:#fff;
 	font-size:21px;
@@ -229,7 +229,7 @@ textarea, input { outline: none; }
 	font-size:17px;
 	vertical-align: bottom;
 	margin:0px;
-	font-family: "PT Sans", Helvetica, Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 }
 .theme-form-white input[type=text]{
 	background:#fafafa;
@@ -264,7 +264,7 @@ textarea, input { outline: none; }
 	width: 100px;
 	font-size:19px;
 	margin:0px;
-	font-family:"PT Sans", sans-serif;
+	font-family:sans-serif;
 	font-weight:700;
 	color:#fff;
 }
@@ -286,7 +286,7 @@ textarea, input { outline: none; }
 	width:180px;
 	font-size:19px;
 	margin:0px;
-	font-family:"PT Sans", sans-serif;
+	font-family:sans-serif;
 	font-weight:700;
 	color:#fff;
 	padding-right:20px;
@@ -334,7 +334,7 @@ textarea, input { outline: none; }
 	background:url(/assets/layout/landing/bg-tab.png) no-repeat center;
 	height:34px;
 	color:#fff;
-	font-family:"PT Sans", sans-serif;
+	font-family:sans-serif;
 	text-align:center;
 	text-decoration:none;
 	font-weight:700;
@@ -376,7 +376,7 @@ textarea, input { outline: none; }
 	 margin:0px auto;
 }
 .full-width-features h1, .theme-modal h3, h1{
-	font-family:"Arvo", sans-serif;
+	font-family:sans-serif;
 	font-weight:200;
 	color:#b1d95c;
 	text-align:center;
@@ -389,7 +389,7 @@ textarea, input { outline: none; }
 }
 .full-width-features h2{
 	color:#666;
-	font-family:"PT Sans", sans-serif;
+	font-family:sans-serif;
 	font-weight:200;
 	font-size:28px;
 	margin-bottom:15px;
@@ -401,7 +401,7 @@ textarea, input { outline: none; }
 }
 .full-width-features h3{
 	color:#333;
-	font-family:"PT Sans", sans-serif;
+	font-family:sans-serif;
 	font-weight:300;
 	font-size:21px;
 	margin-bottom:10px;
@@ -515,7 +515,7 @@ textarea, input { outline: none; }
 	width:180px;
 	font-size:19px;
 	margin:0px;
-	font-family:"PT Sans", sans-serif;
+	font-family:sans-serif;
 	font-weight:700;
 	color:#fff;
 	padding:20px 30px;
@@ -576,7 +576,7 @@ textarea, input { outline: none; }
 	width:240px;
 	font-size:19px;
 	margin:0px;
-	font-family:"PT Sans", sans-serif;
+	font-family:sans-serif;
 	font-weight:700;
 	color:#fff;
 	text-align:center;
@@ -593,7 +593,7 @@ textarea, input { outline: none; }
 	cursor:pointer;
 }
 .contact-form h3{
-	font-family:"PT Sans", sans-serif;
+	font-family:sans-serif;
 	font-weight:200;
 	color:#fff;
 	text-align:center;
@@ -607,7 +607,7 @@ textarea, input { outline: none; }
 	background:url(/assets/layout/landing/bg-end-beer.png) no-repeat bottom center;
 	height:104px;
 	color:#fff;
-	font-family:"PT Sans", sans-serif;
+	font-family:sans-serif;
 	text-align:center;
 	text-decoration:none;
 	font-weight:700;
