@@ -62,7 +62,7 @@ namespace :application do
 
   desc 'Creates symlinks to shared directories'
   task :symlinks do
-    ['public/files', 'public/assets', 'public/images'].each do |path|
+    ['public/files', 'public/assets', 'public/images', '.bundle'].each do |path|
       run "rm -rf #{current_release}/#{path}"
       run "ln -s #{shared_path}/#{path} #{current_release}/#{path}"
     end
