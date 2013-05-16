@@ -23,6 +23,7 @@ nbproject
 public/assets
 public/static/files
 config/database.yml
+config/deploy.rb
 config/mongoid.yml
 config/appconfig.yml
 config/application.yml
