@@ -1,6 +1,6 @@
 class Place < ActiveRecord::Base
   attr_accessible :address, :description, :email, :name, :phone,
-    :seat_amount, :socket, :wifi, :projector
+    :seat_amount, :socket, :wifi, :projector, :avatar
 
   belongs_to :user
   
@@ -16,5 +16,10 @@ class Place < ActiveRecord::Base
     :numericality => true
   validates :projector, :socket, :wifi,
     :inclusion => {:in => [true, false]}
+
+
+  has_attached_file :avatar, 
+    :styles => { :medium => "300x300>", :thumb => "100x100#" },
+    :default_url => "/images/:style/missing.png"
 
 end

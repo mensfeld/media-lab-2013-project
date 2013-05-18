@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title EDUKOWNIA - Najlepsze bezpłatne warsztaty w Krakowie
+    %title INFOSPOT.edu - Najlepsze bezpłatne warsztaty w Krakowie
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
 
     = stylesheet_link_tag "layout/base/bootstrap", "layout/base/bootmagz"
@@ -29,7 +29,7 @@
         .span12.header
           .span12.logo
             %a{:href => "index.html"}
-            %h1.logo-title Edukownia
+            %h1.logo-title INFOSPOT
             %span.slogan Dzięki nam Twój rozwój nabierze rozpędu
 
       %br
@@ -41,7 +41,7 @@
               .container
                 %ul.nav
                   %li{:class => menu_active?(MainController)}
-                    %a{:href => "index.html"} Strona główna
+                    %a{:href => main_path} Strona główna
                   %li
                     %a{:href => "category.html"} Warsztaty i szkolenia
                   %li

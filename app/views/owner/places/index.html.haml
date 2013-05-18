@@ -5,6 +5,7 @@
 
 %table.table.table-striped.table-bordered.table-hover.table-condensed
   %tr
+    %th Miniaturka
     %th Nazwa
     %th Adres
     %th Opis
@@ -13,6 +14,8 @@
     %th Opcje
   - @places.each do |place|
     %tr
+      %td
+        = image_tag place.avatar(:thumb)
       %td
         = place.name
       %td

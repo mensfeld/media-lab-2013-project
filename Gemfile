@@ -20,6 +20,7 @@ gem 'barista'
 gem 'less-rails'
 gem 'execjs'
 gem 'therubyracer', '0.10.2', :platforms => :ruby
+gem "paperclip", "~> 3.0"
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

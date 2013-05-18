@@ -53,4 +53,9 @@ module ApplicationHelper
     link_to text, path, params
   end
 
+  def named_roles
+    names = { :owner => 'Właściciel miejsca' , :organizer => 'Organizator wydarzenia' }
+    User::ROLES.collect {|r| [names[r.to_sym] ,r] }
+  end
+
 end

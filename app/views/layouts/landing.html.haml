@@ -2,7 +2,7 @@
 %html{:xmlns => "http://www.w3.org/1999/xhtml"}
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
-    %title EDUKOWNIA - Najlepsze bezpłatne warsztaty w Krakowie
+    %title INFOSPOT.edu - Najlepsze bezpłatne warsztaty w Krakowie
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
 
     = stylesheet_link_tag "layout/bootstrap", "layout/landing/style"
@@ -37,7 +37,7 @@
               .top-nav
                 %ul.nav.hidden-phone
                   %li
-                    %a.slide-to{:href => "#feature-seta", :name => "feature-set"}
+                    %a.slide-to{:href => "#feature-set", :name => "feature-set"}
                       DOWIEDZ SIĘ WIĘCEJ
                       %i.arrow.arrow-down
                   %li
@@ -49,13 +49,13 @@
 
               .header-main
                 %h1
-                  EDUKOWNIA
+                  INFOSPOT
                 %br.hidden-phone/
                 %h4 Najlepsze bezpłatne warsztaty w Krakowie
 
                 = form_for User.new, :url => user_registration_path, :html => {:class => 'theme-form sign-up-form', :id => 'subForm'} do |f|
                   = f.text_field :email, :class => 'email required', :id => 'email', :placeholder => ''
-                  = f.select :role, User::ROLES
+                  = f.select :role, named_roles
 
                   %input{:type => "submit", :value => "DOŁĄCZ!"}
 
@@ -63,16 +63,14 @@
       %a.down-tab.hidden-phone{:href => main_path}
         KLIKNIJ I ZNAJDŹ WARSZTATY
         %i.arrow.arrow-down
-      .full-width-features.feature-1
+      .full-width-features.feature-1#feature-set
         .container
           .row
 
             .span12
-              %h1 Edukownia łaczy tych, którzy chcą działać!
+              %h1 Infospot łaczy tych, którzy chcą działać!
               %h2
                 Masz pomysł, ale nie masz miejsca?
-                %br.hidden-phone/
-                A może masz miejsce i chęci ale nie masz pomysłu?
                 %br.hidden-phone/
                 Masz miejsce, ale nie masz pomysłu?
                 %br.hidden-phone/
