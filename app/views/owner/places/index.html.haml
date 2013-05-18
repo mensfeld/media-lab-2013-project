@@ -1,0 +1,29 @@
+= link_to "Dodaj nowe miejsce", new_owner_place_path, :class => 'btn btn-primary'
+
+%br
+%br
+
+%table.table.table-striped.table-bordered.table-hover.table-condensed
+  %tr
+    %th Nazwa
+    %th Adres
+    %th Opis
+    %th Email
+    %th Telefon
+    %th Opcje
+  - @places.each do |place|
+    %tr
+      %td
+        = place.name
+      %td
+        = place.address
+      %td
+        = place.description
+      %td
+        = place.email
+      %td
+        = place.phone
+      %td
+        .btn-group
+          = link_to_edit edit_owner_place_path(place)
+          = link_to_destroy owner_place_path(place)

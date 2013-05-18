@@ -6,6 +6,7 @@ class User < ActiveRecord::Base
   ROLES = %w{ organizer owner }
 
   has_many :places
+  has_many :events
 
   validates :role,
     :inclusion => { :in => ROLES, :allow_nil => false }

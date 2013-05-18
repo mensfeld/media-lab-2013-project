@@ -1,0 +1,29 @@
+= link_to "Dodaj nowy event", new_organizer_event_path, :class => 'btn btn-primary'
+
+%br
+%br
+
+%table.table.table-striped.table-bordered.table-hover.table-condensed
+  %tr
+    %th Nazwa
+    %th Opis
+    %th Email
+    %th Telefon
+    %th Strona www
+    %th Opcje
+  - @events.each do |event|
+    %tr
+      %td
+        = event.name
+      %td
+        = event.description
+      %td
+        = event.email
+      %td
+        = event.phone
+      %td
+        = event.website
+      %td
+        .btn-group
+          = link_to_edit edit_organizer_event_path(event)
+          = link_to_destroy organizer_event_path(event)

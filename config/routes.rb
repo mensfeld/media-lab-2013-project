@@ -8,4 +8,8 @@ MediaLab::Application.routes.draw do
     resources :places
   end
 
+  namespace :organizer do
+    resources :events
+  end
+
 end

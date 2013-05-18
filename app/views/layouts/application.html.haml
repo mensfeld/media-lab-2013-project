@@ -1,12 +1,13 @@
 !!!
 %html
   %head
-    %title BootMagz : Magazine Style Theme built with Bootstrap
+    %title EDUKOWNIA - Najlepsze bezpłatne warsztaty w Krakowie
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
 
     = stylesheet_link_tag "layout/base/bootstrap", "layout/base/bootmagz"
 
     = javascript_include_tag "libs/jquery/jquery", "twitter/bootstrap", 'libs/jquery/jquery-ujs'
+    = csrf_meta_tag
   %body
     .container.main
       .row
@@ -39,7 +40,7 @@
             .navbar-inner
               .container
                 %ul.nav
-                  %li.active
+                  %li{:class => menu_active?(MainController)}
                     %a{:href => "index.html"} Strona główna
                   %li
                     %a{:href => "category.html"} Warsztaty i szkolenia
@@ -54,20 +55,24 @@
 
                 %ul.nav.pull-right
                   - unless current_user
-                    %li
+                    %li{:class => menu_active?(Devise::SessionsController)}
                       %a{:href => new_user_session_path} Zaloguj się
-                    %li
+                    %li{:class => menu_active?(Devise::RegistrationsController)}
                       %a{:href => new_user_registration_path} Zarejestruj się
                   - else
+                    - if current_user.owner?
+                      %li{:class => menu_active?(Owner::PlacesController)}
+                        %a{:href => owner_places_path} Moje miejsca
+                    - if current_user.organizer?
+                      %li{:class => menu_active?(Organizer::EventsController)}
+                        %a{:href => organizer_events_path} Moje warsztaty
+
                     %li
                       = link_to 'Wyloguj się', destroy_user_session_path, :method => 'delete'
 
-        .span2
-          &nbsp;  
-        .span8
+        .span12
           = bootstrap_flash
           = yield
-        .span2
 
       %footer#footer
         .row
