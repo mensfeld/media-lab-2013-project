@@ -37,7 +37,7 @@
         .row
           .span4.left-content
             .widget-title
-              %h3 Politics
+              %h3 Nadchodzące warsztaty
             .span4.featured-news
               %img{:alt => "", :src => "/assets/layout/base/politics.jpg"}
               %a{:href => "single.html"}
@@ -65,7 +65,7 @@
                 %span.date Posted on July 02, 2011 | 0 comments
           .span4.right-content
             .widget-title
-              %h3 Business
+              %h3 Najnowsze miejsca
             .span4.featured-news
               %img{:alt => "", :src => "/assets/layout/base/business.jpg"}
               %a{:href => "single.html"}
@@ -95,7 +95,7 @@
         .row
           .span8
             .widget-title
-              %h3 Sports
+              %h3 Zgłoś pomysł
             .row
               .span4.left-content.big-image-content
                 %img{:src => "/assets/layout/base/370x255-1.jpg"}
@@ -139,15 +139,15 @@
             %li.active
               %a{"data-toggle" => "tab", :href => "#1"}
                 %i.icon-star>
-                \ Popular
+                \ Ranking
             %li
               %a{"data-toggle" => "tab", :href => "#2"}
                 %i.icon-comment>
-                \ Comments
+                \ Kalendarz
             %li
               %a{"data-toggle" => "tab", :href => "#3"}
                 %i.icon-tags>
-                \ Tags
+                \ Tagi
           .tab-content
             #1.tab-pane.active
               .popular
@@ -252,6 +252,6 @@
         .widget-title
           %h3 Find us on Facebook
         .span4.fb-like-box
-          .fb-like-box{"data-header" => "true", "data-height" => "250", "data-href" => "http://www.facebook.com/platform", "data-show-faces" => "true", "data-stream" => "false", "data-width" => "280"}
+          %iframe{:allowtransparency => "true", :frameborder => "0", :scrolling => "no", :src => "//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FInfospotEduPl&width=290&height=350&show_faces=true&colorscheme=light&stream=false&show_border=true&header=true", :style => "border:none; overflow:hidden; width:290px; height:590px;"}
     %br
   / End Right Sidebar

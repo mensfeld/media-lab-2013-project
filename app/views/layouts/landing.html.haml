@@ -23,6 +23,8 @@
               %span Polub nas:
           .span4
             %a{:href => '#'}
+              = image_tag 'layout/landing/Pinterest.png'
+            %a{:href => '#'}
               = image_tag 'layout/landing/Facebook.png'
             %a{:href => '#'}
               = image_tag 'layout/landing/Twitter.png'
@@ -100,11 +102,9 @@
                 W jakich warsztatach chciałbyś wziąć udział? Zainspiruj innych!
 
       .container.call-to-action
-        %h1
-          NADCHODZIMY!
-        %a.scroll-top{:href => new_user_registration_path} DOŁĄCZ DO NAS!
+        %a.scroll-top{:href => 'mailto:kontakt@infospot.edu.pl'} kontakt@infospot.edu.pl
       .end_page
-        %img{:alt => "logo", :src => "/assets/layout/landing/beer.png"}
+        %img{:alt => "logo", :src => "/assets/layout/landing/envelope.png"}
 
       .footer{:name => "contact"}
         .container.contact-form

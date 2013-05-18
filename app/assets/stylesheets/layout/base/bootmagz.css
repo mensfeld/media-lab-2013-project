@@ -429,6 +429,10 @@ ul.social_media li a.netvibes { background-position: -640px 0px }
 
 }
 
+#footer .span9 {
+  text-align: justify;
+}
+
 .item-tweet{
     border-bottom: #999 1px dotted;
     margin-bottom: 10px;

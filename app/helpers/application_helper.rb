@@ -56,7 +56,11 @@ module ApplicationHelper
   end
 
   def named_roles
-    names = { :owner => 'Właściciel miejsca' , :organizer => 'Organizator wydarzenia' }
+    names = { 
+      :owner       => 'Właściciel miejsca' ,
+      :organizer   => 'Organizator wydarzenia',
+      :participant => 'Uczestnik'
+    }
     User::ROLES.collect {|r| [names[r.to_sym] ,r] }
   end
 

@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
    :rememberable, :trackable, :validatable #, :recoverable
 
-  ROLES = %w{ organizer owner }
+  ROLES = %w{ participant organizer owner }
 
   has_many :places
   has_many :events
