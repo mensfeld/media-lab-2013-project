@@ -46,8 +46,7 @@
                 %h1
                   EDUKOWNIA
                 %br.hidden-phone/
-                %h4 Jesteśmy tam, gdzie są warsztaty
-                %h4 Jesteśmy tam, gdzie są miejsca
+                %h4 Najlepsze bezpłatne warsztaty w Krakowie
 
                 = form_for User.new, :url => user_registration_path, :html => {:class => 'theme-form sign-up-form', :id => 'subForm'} do |f|
                   = f.text_field :email, :class => 'email required', :id => 'email', :placeholder => ''
@@ -57,7 +56,7 @@
                  
 
       %a.down-tab.hidden-phone{:href => "#feature-set", :name => "feature-set"}
-        CHCĘ WIEDZIEĆ WIĘCEJ
+        KLIKNIJ I ZNAJDŹ WARSZTATY
         %i.arrow.arrow-down
       .full-width-features.feature-1
         .container
@@ -90,7 +89,7 @@
                 Jesteś właścicielem pubu lub klubu? Pracujesz w domu kultury? Chciałbyś przyciągnąć do siebie ludzi, którzy naprawdę chcą działać? Pomożemy Ci w tym!
             .span3
               %img{:alt => "", :src => "/assets/layout/landing/feature04.png"}
-              %h3 DZIAŁAJ
+              %h3 ZGŁOŚ
               %p
                 Brakuje Ci punktu zaczepienia w społeczności? Chciałbyś pomagać ale nie wiesz jak, gdzie i komu? My pomożemy Tobie pomagać innym!
       .full-width-features.feature-2

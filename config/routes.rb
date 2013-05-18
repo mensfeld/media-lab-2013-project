@@ -3,4 +3,9 @@ MediaLab::Application.routes.draw do
 
   root to: "landing#index"
   get '/main', to: 'main#index', as: :main
+
+  namespace :owner do
+    resources :places
+  end
+
 end
