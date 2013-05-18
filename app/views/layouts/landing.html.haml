@@ -2,7 +2,7 @@
 %html{:xmlns => "http://www.w3.org/1999/xhtml"}
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
-    %title INFOSPOT.edu - Najlepsze bezpłatne warsztaty w Krakowie
+    %title INFO SPOT.edu - Najlepsze bezpłatne warsztaty w Krakowie
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
 
     = stylesheet_link_tag "layout/bootstrap", "layout/landing/style"
@@ -19,8 +19,7 @@
         .row
           .span4.offset2
             %h4
-              Ostro pracujemy.
-              %span Polub nas:
+              Polub nas:
           .span4
             %a{:href => '#'}
               = image_tag 'layout/landing/Pinterest.png'
@@ -49,7 +48,7 @@
 
               .header-main
                 %h1
-                  INFOSPOT
+                  = image_tag('/assets/layout/landing/logo.png', :alt => 'Info sspot')
 
                 %h4 Najlepsze bezpłatne warsztaty w Krakowie
 
@@ -61,14 +60,14 @@
 
 
       %a.down-tab.hidden-phone{:href => main_path}
-        KLIKNIJ I ZNAJDŹ WARSZTATY
+        ZNAJDŹ WARSZTATY
         %i.arrow.arrow-down
       .full-width-features.feature-1#feature-set
         .container
           .row
 
             .span12
-              %h1 Infospot łaczy tych, którzy chcą działać!
+              %h1 Info spot łaczy tych, którzy chcą działać!
               %h2
                 Masz pomysł, ale nie masz miejsca?
                 %br.hidden-phone/
@@ -132,9 +131,8 @@
                 %input{:type => "submit", :value => "SUBMIT!"}
         .container
           .copyright
-            %a.logo{:href => "index.html"}
-              %img{:alt => "logo", :src => "/assets/layout/landing/logo-footer.png"}
+            %a.logo{:href => main_path}
+              %img{:alt => "logo", :src => "/assets/layout/landing/logo_small.png"}
             %p
               Utworzono w czasie Media-Labu 2013.
               Copyright 2013
-              %br
