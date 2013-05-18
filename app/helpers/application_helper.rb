@@ -1,3 +1,5 @@
+# coding: utf-8
+
 module ApplicationHelper
 
   # Decides whether or not menu element is active (we are in this menu)
