@@ -11,7 +11,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130510203407) do
+ActiveRecord::Schema.define(:version => 20130518083352) do
+
+  create_table "places", :force => true do |t|
+    t.string   "name"
+    t.string   "address"
+    t.string   "phone"
+    t.string   "email"
+    t.text     "description"
+    t.boolean  "wifi"
+    t.boolean  "projector"
+    t.integer  "seat_amount"
+    t.boolean  "socket"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.integer  "user_id"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
@@ -34,6 +49,7 @@ ActiveRecord::Schema.define(:version => 20130510203407) do
     t.string   "unlock_token"
     t.datetime "locked_at"
     t.string   "authentication_token"
+    t.string   "role",                   :default => "", :null => false
   end
 
   add_index "users", ["authentication_token"], :name => "index_users_on_authentication_token", :unique => true

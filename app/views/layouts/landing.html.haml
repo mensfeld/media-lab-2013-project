@@ -38,27 +38,23 @@
                   %li
                     %a.contact-link{:href => "#contact"} KONTAKT
                   %li
-                    %a.contact-link{:href => "#contact"} ZALOGUJ SIĘ
+                    %a{:href => new_user_session_path} ZALOGUJ SIĘ
                   %li
                     %a{:href => main_path} STRONA GŁÓWNA
 
-              .header-main.hidden-phone
+              .header-main
                 %h1
-                  MEETING POINT
+                  EDUKOWNIA
                 %br.hidden-phone/
                 %h4 Jesteśmy tam, gdzie są warsztaty
                 %h4 Jesteśmy tam, gdzie są miejsca
 
-                %form#subForm.theme-form.sign-up-form{:action => '#', :method => "post"}
-                  %input#email.email.required{:name => "email", :title => "", :type => "email", :value => ""}
+                = form_for User.new, :url => user_registration_path, :html => {:class => 'theme-form sign-up-form', :id => 'subForm'} do |f|
+                  = f.text_field :email, :class => 'email required', :id => 'email', :placeholder => ''
+                  = f.select :role, User::ROLES
+
                   %input{:type => "submit", :value => "DOŁĄCZ!"}
-              .header-main-phone.visible-phone
-                %h1
-                  MEETING POINT
-                %h4 Dołącz do nas, podając swój e-mail
-                %form#subForm.theme-form.sign-up-form{:action => '#', :method => "post"}
-                  %input#email.email.required{:name => "email", :title => "Twój adres e-mail", :type => "email", :value => ""}
-                  %input{:type => "submit", :value => "DOŁĄCZ!"}
+                 
 
       %a.down-tab.hidden-phone{:href => "#feature-set", :name => "feature-set"}
         CHCĘ WIEDZIEĆ WIĘCEJ
@@ -188,7 +184,7 @@
       .container.call-to-action
         %h1
           NADCHODZIMY!
-        %a.scroll-top{:href => "#top"} DOŁĄCZ DO NAS!
+        %a.scroll-top{:href => new_user_registration_path} DOŁĄCZ DO NAS!
       .end_page
         %img{:alt => "logo", :src => "/assets/layout/landing/beer.png"}
 
