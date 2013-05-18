@@ -153,9 +153,9 @@
               .popular
                 - @places.each do |place|
                   .item-news
-                    %a{:href => "single.html"}
-                      %img{:alt => "", :src => "/assets/layout/base/80x60-1.jpg"}
-                    %a{:href => "single.html"}
+                    %a{:href => place_path(place)}
+                      %img{:alt => "", :src => place.avatar(:thumb)}
+                    %a{:href => place_path(place)}
                     %h4= place.name
                     %span.date= place.created_at
 
@@ -216,31 +216,7 @@
                   %a.btn{:href => '#'}
                     %i.icon-tag>
                     Hollywood Artist
-    %br
-    .row
-      .span4.box-widget
-        .widget-title
-          %h3 Latest Photos
-        .span4.box-widget
-          %ul.thumbnails.latest-photos
-            %li.span1
-              %a{:href => "galleries.html"}
-                %img{:alt => "", :src => "/assets/layout/base/70x70-1.jpg"}
-            %li.span1
-              %a{:href => "galleries.html"}
-                %img{:alt => "", :src => "/assets/layout/base/70x70-1.jpg"}
-            %li.span1
-              %a{:href => "galleries.html"}
-                %img{:alt => "", :src => "/assets/layout/base/70x70-1.jpg"}
-            %li.span1
-              %a{:href => "galleries.html"}
-                %img{:alt => "", :src => "/assets/layout/base/70x70-1.jpg"}
-            %li.span1
-              %a{:href => "galleries.html"}
-                %img{:alt => "", :src => "/assets/layout/base/70x70-1.jpg"}
-            %li.span1
-              %a{:href => "galleries.html"}
-                %img{:alt => "", :src => "/assets/layout/base/70x70-1.jpg"}
+
     %br
     .row
       .span4
