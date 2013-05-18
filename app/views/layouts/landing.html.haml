@@ -37,6 +37,10 @@
               .top-nav
                 %ul.nav.hidden-phone
                   %li
+                    %a.slide-to{:href => "#feature-seta", :name => "feature-set"}
+                      DOWIEDZ SIĘ WIĘCEJ
+                      %i.arrow.arrow-down
+                  %li
                     %a.contact-link{:href => "#contact"} KONTAKT
                   %li
                     %a{:href => new_user_session_path} ZALOGUJ SIĘ
@@ -54,9 +58,9 @@
                   = f.select :role, User::ROLES
 
                   %input{:type => "submit", :value => "DOŁĄCZ!"}
-                 
 
-      %a.down-tab.hidden-phone{:href => "#feature-set", :name => "feature-set"}
+
+      %a.down-tab.hidden-phone{:href => main_path}
         KLIKNIJ I ZNAJDŹ WARSZTATY
         %i.arrow.arrow-down
       .full-width-features.feature-1
@@ -64,11 +68,16 @@
           .row
 
             .span12
-              %h1 ŁĄCZYMY TYCH, KTÓRZY CHCĄ DZIAŁAĆ!
+              %h1 Edukownia łaczy tych, którzy chcą działać!
               %h2
-                Masz pomysł i chęci ale nie masz miejsca?
+                Masz pomysł, ale nie masz miejsca?
                 %br.hidden-phone/
                 A może masz miejsce i chęci ale nie masz pomysłu?
+                %br.hidden-phone/
+                Masz miejsce, ale nie masz pomysłu?
+                %br.hidden-phone/
+                Masz motywację, ale nie masz informacji?
+
           .row
             .span12
               %hr
@@ -82,104 +91,17 @@
               %img{:alt => "", :src => "/assets/layout/landing/feature02.png"}
               %h3 ORGANIZUJ
               %p
-                Dzielenie się wiedzą nie jest trudne i nic nie kosztuje! Wszystko czego potrzebujesz to czas i miejsce. Miejsce które pomożemy Ci zorganizować!
+                Jeśli chcesz zorganizować warsztaty, ale nie wiesz, gdzie możesz to zrobić? Tutaj znajdziesz bazę najlepszych miejsc w Krakowie.
             .span3
               %img{:alt => "", :src => "/assets/layout/landing/feature03.png"}
               %h3 INFORMUJ
               %p
-                Jesteś właścicielem pubu lub klubu? Pracujesz w domu kultury? Chciałbyś przyciągnąć do siebie ludzi, którzy naprawdę chcą działać? Pomożemy Ci w tym!
+                Słyszałeś o ciekawych warsztatach? A może pracujesz w domu kultury, jesteś właścicielem klubu? Chciałbyś przyciągnąć do siebie ludzi? Daj znać!
             .span3
               %img{:alt => "", :src => "/assets/layout/landing/feature04.png"}
-              %h3 ZGŁOŚ
+              %h3 ZGŁOŚ POMYSŁ
               %p
-                Brakuje Ci punktu zaczepienia w społeczności? Chciałbyś pomagać ale nie wiesz jak, gdzie i komu? My pomożemy Tobie pomagać innym!
-      .full-width-features.feature-2
-        .container
-          .row
-
-            .span12
-              %h1 AMAZING PRICES
-              %h2
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                %br.hidden-phone/
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-          .row
-            .span12
-            .span12
-              .pricing-table-wrapper
-                .pricing-table.row-fluid
-                  %ul.pricing-column.span2
-                    %li.pricing-title Beginner
-                    %li.pricing-price
-                      $20
-                      %span /month
-                    %li Yes
-                    %li Yes
-                    %li Yes
-                    %li No
-                    %li No
-                    %li.pricing-button
-                      %a.button{:href => '#'} Sign Up
-                  %ul.pricing-column.span2
-                    %li.pricing-title Beginner
-                    %li.pricing-price
-                      $20
-                      %span /month
-                    %li 5,000MB Storage
-                    %li 1TB Bandwidth
-                    %li Technical support
-                    %li cPanel & MySQL
-                    %li 99% uptime
-                    %li.pricing-button
-                      %a.button{:href => '#'} Sign Up
-                  %ul.pricing-column.span3
-                    %li.pricing-title Special Offer!
-                    %li.pricing-price
-                      $50
-                      %span /month
-                    %li 50,000MB Storage
-                    %li 5TB Bandwidth
-                    %li Technical support
-                    %li cPanel & MySQL
-                    %li 100% uptime
-                    %li.pricing-button
-                      %a.button{:href => '#'} Sign Up
-                  %ul.pricing-column.span5
-                    %li.pricing-title Special Offer!
-                    %li.pricing-price
-                      $100
-                      %span /month
-                    %li Unlimited Storage
-                    %li Unlimited Bandwidth
-                    %li Technical support
-                    %li cPanel & MySQL
-                    %li 100% uptime
-                    %li.pricing-button
-                      %a.button{:href => '#'} Sign Up
-      .full-width-features.feature-3
-        .container
-          .row
-
-            .span12
-              %h1 POZNAJ NAS!
-              %h2
-                Jesteśmy grupą zapaleńców,
-                %br
-                działających na terenie Krakowa.
-          .row
-            .span12
-              %hr
-              %br
-            .span6
-              %img{:alt => "", :src => "/assets/layout/landing/team01.jpg"}
-              %h3 Jane Doe
-              %p
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-            .span6
-              %img{:alt => "", :src => "/assets/layout/landing/team02.jpg"}
-              %h3 John Doe
-              %p
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                W jakich warsztatach chciałbyś wziąć udział? Zainspiruj innych!
 
       .container.call-to-action
         %h1
