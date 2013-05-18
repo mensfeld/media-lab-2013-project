@@ -1,0 +1,281 @@
+.row
+  / Start Main Content
+  .span8
+    .row
+      .span8
+        #myCarousel.carousel.slide
+          .carousel-inner
+            .item.active
+              %img{:alt => "", :src => "/assets/layout/base/slider-1.jpg"}
+              .carousel-caption
+                %h4 First Thumbnail label
+                %p
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud.
+            .item
+              %img{:alt => "", :src => "/assets/layout/base/slider-2.jpg"}
+              .carousel-caption
+                %h4 Second Thumbnail label
+                %p
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud.
+            .item
+              %img{:alt => "", :src => "/assets/layout/base/slider-3.jpg"}
+              .carousel-caption
+                %h4 Third Thumbnail label
+                %p
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud.
+          %a.left.carousel-control{"data-slide" => "prev", :href => "#myCarousel"} ‹
+          %a.right.carousel-control{"data-slide" => "next", :href => "#myCarousel"} ›
+    %hr/
+    .row
+      .span8
+        .row
+          .span4.left-content
+            .widget-title
+              %h3 Politics
+            .span4.featured-news
+              %img{:alt => "", :src => "/assets/layout/base/politics.jpg"}
+              %a{:href => "single.html"}
+              %h4 Up nominated one of the best movies to be created by disney
+              %span.date Posted on July 02, 2011 | 0 comments
+              %p Maecenas mattis, tortor ut posuere aliquam, quam enim accumsan purus, auctor placerat orci velit vitae massa. Vivamus non iaculis
+            .span4.recent-news
+              .item-news
+                %a{:href => "single.html"}
+                  %img{:alt => "", :src => "/assets/layout/base/hillary_clinton.jpg"}
+                %a{:href => "single.html"}
+                %h4 Toy Story 3 One of the best movies (Video)
+                %span.date Posted on July 02, 2011 | 0 comments
+              .item-news
+                %a{:href => "single.html"}
+                  %img{:alt => "", :src => "/assets/layout/base/hillary_clinton.jpg"}
+                %a{:href => "single.html"}
+                %h4 Toy Story 3 One of the best movies (Video)
+                %span.date Posted on July 02, 2011 | 0 comments
+              .item-news
+                %a{:href => "single.html"}
+                  %img{:alt => "", :src => "/assets/layout/base/hillary_clinton.jpg"}
+                %a{:href => "single.html"}
+                %h4 Toy Story 3 One of the best movies (Video)
+                %span.date Posted on July 02, 2011 | 0 comments
+          .span4.right-content
+            .widget-title
+              %h3 Business
+            .span4.featured-news
+              %img{:alt => "", :src => "/assets/layout/base/business.jpg"}
+              %a{:href => "single.html"}
+              %h4 Up nominated one of the best movies to be created by disney
+              %span.date Posted on July 02, 2011 | 0 comments
+              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore ...
+            .span4.recent-news
+              .item-news
+                %a{:href => "single.html"}
+                  %img{:alt => "", :src => "/assets/layout/base/80x60-1.jpg"}
+                %a{:href => "single.html"}
+                %h4 Toy Story 3 One of the best movies (Video)
+                %span.date Posted on July 02, 2011 | 0 comments
+              .item-news
+                %a{:href => "single.html"}
+                  %img{:alt => "", :src => "/assets/layout/base/80x60-1.jpg"}
+                %a{:href => "single.html"}
+                %h4 Toy Story 3 One of the best movies (Video)
+                %span.date Posted on July 02, 2011 | 0 comments
+              .item-news
+                %a{:href => "single.html"}
+                  %img{:alt => "", :src => "/assets/layout/base/80x60-1.jpg"}
+                %a{:href => "single.html"}
+                %h4 Toy Story 3 One of the best movies (Video)
+                %span.date Posted on July 02, 2011 | 0 comments
+        %br
+        .row
+          .span8
+            .widget-title
+              %h3 Sports
+            .row
+              .span4.left-content.big-image-content
+                %img{:src => "/assets/layout/base/370x255-1.jpg"}
+                .inner-news-title.fixed
+                  %h2
+                    %a{:href => "single.html"} Sport Title
+                  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit integer id nibh ac est.
+              .span4.recent-news.right-content
+                .item-news
+                  %a{:href => "single.html"}
+                    %img{:alt => "", :src => "/assets/layout/base/rooney.jpg"}
+                  %a{:href => "single.html"}
+                  %h4 Toy Story 3 One of the best movies (Video)
+                  %span.date Posted on July 02, 2011 | 0 comments
+                .item-news
+                  %a{:href => "single.html"}
+                    %img{:alt => "", :src => "/assets/layout/base/rooney.jpg"}
+                  %a{:href => "single.html"}
+                  %h4 Toy Story 3 One of the best movies (Video)
+                  %span.date Posted on July 02, 2011 | 0 comments
+                .item-news
+                  %a{:href => "single.html"}
+                    %img{:alt => "", :src => "/assets/layout/base/rooney.jpg"}
+                  %a{:href => "single.html"}
+                  %h4 Toy Story 3 One of the best movies (Video)
+                  %span.date Posted on July 02, 2011 | 0 comments
+        %br
+  / End Main Content
+  / Start Right Sidebar
+  .span4.right-sidebar
+    .row
+      .span4.box-widget
+        %form.form-search.pull-right
+          %input.search-query.search-form{:placeholder => "Type your keyword here !", :type => "text"}
+          %button.btn{:type => "submit"} Go
+    %br
+    .row
+      .span4.tab-box.box-widget
+        .tabbable
+          %ul.nav.nav-tabs
+            %li.active
+              %a{"data-toggle" => "tab", :href => "#1"}
+                %i.icon-star>
+                \ Popular
+            %li
+              %a{"data-toggle" => "tab", :href => "#2"}
+                %i.icon-comment>
+                \ Comments
+            %li
+              %a{"data-toggle" => "tab", :href => "#3"}
+                %i.icon-tags>
+                \ Tags
+          .tab-content
+            #1.tab-pane.active
+              .popular
+                - @places.each do |place|
+                  .item-news
+                    %a{:href => "single.html"}
+                      %img{:alt => "", :src => "/assets/layout/base/80x60-1.jpg"}
+                    %a{:href => "single.html"}
+                    %h4= place.name
+                    %span.date= place.created_at
+
+            #2.tab-pane
+              .comments
+                .item-news
+                  %a{:href => "single.html"}
+                    %img{:alt => "", :src => "/assets/layout/base/80x60-1.jpg"}
+                  %a{:href => "single.html"}
+                  %h4
+                    %i Admin :Toy Story 3 One of the best movies (Video)
+                  %span.date Posted on July 02, 2011 07:15 AM
+                .item-news
+                  %a{:href => "single.html"}
+                    %img{:alt => "", :src => "/assets/layout/base/80x60-1.jpg"}
+                  %a{:href => "single.html"}
+                  %h4
+                    %i Michael :Toy Story 3 One of the best movies (Video)
+                  %span.date Posted on July 02, 2011 20:30 PM
+                .item-news
+                  %a{:href => "single.html"}
+                    %img{:alt => "", :src => "/assets/layout/base/80x60-1.jpg"}
+                  %a{:href => "single.html"}
+                  %h4
+                    %i John : Toy Story 3 One of the best movies (Video)
+                  %span.date Posted on July 02, 2011 11:45 am
+            #3.tab-pane
+              %ul.tags
+                %li
+                  %a.btn{:href => '#'}
+                    %i.icon-tag>
+                    Sport
+                %li
+                  %a.btn{:href => '#'}
+                    %i.icon-tag>
+                    Politics
+                %li
+                  %a.btn{:href => '#'}
+                    %i.icon-tag>
+                    Obama
+                %li
+                  %a.btn{:href => '#'}
+                    %i.icon-tag>
+                    Soccer
+                %li
+                  %a.btn{:href => '#'}
+                    %i.icon-tag>
+                    Social Media
+                %li
+                  %a.btn{:href => '#'}
+                    %i.icon-tag>
+                    Economics
+                %li
+                  %a.btn{:href => '#'}
+                    %i.icon-tag>
+                    Musics
+                %li
+                  %a.btn{:href => '#'}
+                    %i.icon-tag>
+                    Hollywood Artist
+    %br
+    .row
+      .span4.box-widget
+        .widget-title
+          %h3 Latest Photos
+        .span4.box-widget
+          %ul.thumbnails.latest-photos
+            %li.span1
+              %a{:href => "galleries.html"}
+                %img{:alt => "", :src => "/assets/layout/base/70x70-1.jpg"}
+            %li.span1
+              %a{:href => "galleries.html"}
+                %img{:alt => "", :src => "/assets/layout/base/70x70-1.jpg"}
+            %li.span1
+              %a{:href => "galleries.html"}
+                %img{:alt => "", :src => "/assets/layout/base/70x70-1.jpg"}
+            %li.span1
+              %a{:href => "galleries.html"}
+                %img{:alt => "", :src => "/assets/layout/base/70x70-1.jpg"}
+            %li.span1
+              %a{:href => "galleries.html"}
+                %img{:alt => "", :src => "/assets/layout/base/70x70-1.jpg"}
+            %li.span1
+              %a{:href => "galleries.html"}
+                %img{:alt => "", :src => "/assets/layout/base/70x70-1.jpg"}
+    %br
+    .row
+      .span4
+        .span2.sidebar-left
+          .widget-title
+            %h3 Categories
+          %ul.nav
+            %li
+              %a{:href => "blog.html"} Category Item
+            %li
+              %a{:href => "blog.html"} Category Item
+            %li
+              %a{:href => "blog.html"} Category Item
+        .span2.sidebar-right
+          .widget-title
+            %h3 Archives
+          %ul.nav
+            %li
+              %a{:href => "blog.html"}
+                January 2012
+                %span.post-count (34)
+            %li
+              %a{:href => "blog.html"}
+                February 2012
+                %span.post-count (10)
+            %li
+              %a{:href => "blog.html"}
+                March 2012
+                %span.post-count (7)
+    %br
+    .row
+      .span4.box-widget
+        .widget-title
+          %h3 Find us on Facebook
+        .span4.fb-like-box
+          .fb-like-box{"data-header" => "true", "data-height" => "250", "data-href" => "http://www.facebook.com/platform", "data-show-faces" => "true", "data-stream" => "false", "data-width" => "280"}
+    %br
+  / End Right Sidebar
