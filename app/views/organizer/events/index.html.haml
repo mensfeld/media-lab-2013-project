@@ -5,6 +5,7 @@
 
 %table.table.table-striped.table-bordered.table-hover.table-condensed
   %tr
+    %th Miniaturka
     %th Nazwa
     %th Opis
     %th Email
@@ -13,6 +14,8 @@
     %th Opcje
   - @events.each do |event|
     %tr
+      %td
+        = image_tag place.avatar(:thumb)
       %td
         = event.name
       %td

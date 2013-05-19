@@ -1693,16 +1693,16 @@ legend + .control-group {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 .btn-primary {
-  background-color: #99AA00;
-  background-image: -moz-linear-gradient(top, #99AA00, #1564A7);
-  background-image: -ms-linear-gradient(top, #99AA00, #1564A7);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#99AA00), to(#1564A7));
-  background-image: -webkit-linear-gradient(top, #99AA00, #1564A7);
-  background-image: -o-linear-gradient(top, #99AA00, #1564A7);
-  background-image: linear-gradient(top, #99AA00, #1564A7);
+  background-color: #F7AB43;
+  background-image: -moz-linear-gradient(top, #F7AB43, #F7AB43);
+  background-image: -ms-linear-gradient(top, #F7AB43, #F7AB43);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#F7AB43), to(#F7AB43));
+  background-image: -webkit-linear-gradient(top, #F7AB43, #F7AB43);
+  background-image: -o-linear-gradient(top, #F7AB43, #F7AB43);
+  background-image: linear-gradient(top, #F7AB43, #F7AB43);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088cc', endColorstr='#0055cc', GradientType=0);
-  border-color: #1564A7 #1564A7 #99AA00;
+  border-color: #F7AB43 #F7AB43 #F7AB43;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   *background-color: #1564A7;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
@@ -1714,8 +1714,8 @@ legend + .control-group {
 .btn-primary.active,
 .btn-primary.disabled,
 .btn-primary[disabled] {
-  background-color: #1564A7;
-  *background-color: #1564A7;
+  background-color: #F7AB43;
+  *background-color: #F7AB43;
 }
 .btn-primary:active,
 .btn-primary.active {
@@ -2813,14 +2813,14 @@ input[type="submit"].btn.btn-mini {
   padding-left: 20px;
   padding-right: 20px;
   background-color: #1564A7;
-  /*background-image: -moz-linear-gradient(top, #561617, #be8700);
-  background-image: -ms-linear-gradient(top, #561617, #be8700);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#561617), to(#be8700));
-  background-image: -webkit-linear-gradient(top, #561617, #be8700);
-  background-image: -o-linear-gradient(top, #561617, #be8700);
-  background-image: linear-gradient(top, #561617, #be8700);
+  /*background-image: -moz-linear-gradient(top, #561617, #F7AB43);
+  background-image: -ms-linear-gradient(top, #561617, #F7AB43);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#561617), to(#F7AB43));
+  background-image: -webkit-linear-gradient(top, #561617, #F7AB43);
+  background-image: -o-linear-gradient(top, #561617, #F7AB43);
+  background-image: linear-gradient(top, #561617, #F7AB43);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#561617', endColorstr='#be8700', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#561617', endColorstr='#F7AB43', GradientType=0);
   */
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -3017,14 +3017,14 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav .active > a:hover {
   color: #ffffff;
   text-decoration: none;
-  background-color: #be8700;
+  background-color: #1A88E6;
 }
 .navbar .divider-vertical {
   height: 40px;
   width: 1px;
   margin: 0 9px;
   overflow: hidden;
-  background-color: #be8700;
+  background-color: #F7AB43;
   border-right: 1px solid #561617;
 }
 .navbar .nav.pull-right {
@@ -3038,17 +3038,17 @@ input[type="submit"].btn.btn-mini {
   margin-left: 5px;
   margin-right: 5px;
   background-color: #80430e;
-  background-image: -moz-linear-gradient(top, #561617, #be8700);
-  background-image: -ms-linear-gradient(top, #561617, #be8700);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#561617), to(#be8700));
-  background-image: -webkit-linear-gradient(top, #561617, #be8700);
-  background-image: -o-linear-gradient(top, #561617, #be8700);
-  background-image: linear-gradient(top, #561617, #be8700);
+  background-image: -moz-linear-gradient(top, #561617, #F7AB43);
+  background-image: -ms-linear-gradient(top, #561617, #F7AB43);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#561617), to(#F7AB43));
+  background-image: -webkit-linear-gradient(top, #561617, #F7AB43);
+  background-image: -o-linear-gradient(top, #561617, #F7AB43);
+  background-image: linear-gradient(top, #561617, #F7AB43);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#561617', endColorstr='#be8700', GradientType=0);
-  border-color: #be8700 #be8700 #725100;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#561617', endColorstr='#F7AB43', GradientType=0);
+  border-color: #F7AB43 #F7AB43 #725100;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #be8700;
+  *background-color: #F7AB43;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -3061,7 +3061,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .btn-navbar.active,
 .navbar .btn-navbar.disabled,
 .navbar .btn-navbar[disabled] {
-  background-color: #be8700;
+  background-color: #F7AB43;
   *background-color: #a57500;
 }
 .navbar .btn-navbar:active,
@@ -4772,7 +4772,7 @@ button.close {
   }
   .nav-collapse .nav > li > a:hover,
   .nav-collapse .dropdown-menu a:hover {
-    background-color: #be8700;
+    background-color: #F7AB43;
   }
   .nav-collapse.in .btn-group {
     margin-top: 5px;
@@ -4808,8 +4808,8 @@ button.close {
     float: none;
     padding: 9px 15px;
     margin: 9px 0;
-    border-top: 1px solid #be8700;
-    border-bottom: 1px solid #be8700;
+    border-top: 1px solid #F7AB43;
+    border-bottom: 1px solid #F7AB43;
     -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.1);
     -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.1);
     box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.1);

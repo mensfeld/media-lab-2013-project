@@ -19,7 +19,7 @@ class Place < ActiveRecord::Base
 
 
   has_attached_file :avatar, 
-    :styles => { :medium => "300x300>", :thumb => "90x60#" },
+    :styles => { :medium => "300x300>", :thumb => "90x60#", :big => '620x315#' },
     :default_url => "/images/:style/missing.png"
 
 end
