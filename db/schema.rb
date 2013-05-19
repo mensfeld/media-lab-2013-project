@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130518124019) do
+ActiveRecord::Schema.define(:version => 20130519085624) do
 
   create_table "events", :force => true do |t|
     t.string   "name"
@@ -19,9 +19,13 @@ ActiveRecord::Schema.define(:version => 20130518124019) do
     t.string   "email"
     t.string   "phone"
     t.string   "website"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
     t.integer  "user_id"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
   create_table "places", :force => true do |t|

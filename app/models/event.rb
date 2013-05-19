@@ -1,5 +1,5 @@
 class Event < ActiveRecord::Base
-  attr_accessible :name, :description, :email, :phone, :website
+  attr_accessible :name, :description, :email, :phone, :website, :avatar
 
   belongs_to :user
   
